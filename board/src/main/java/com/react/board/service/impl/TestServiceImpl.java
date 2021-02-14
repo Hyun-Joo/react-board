@@ -13,8 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 public class TestServiceImpl implements TestService {
 	
 	@Autowired
-	TestRepository testRepository;
-
+	private TestRepository testRepository;
+	
 	@Override
 	public String test() {
 		String result = "";

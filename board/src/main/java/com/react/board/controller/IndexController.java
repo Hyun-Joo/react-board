@@ -11,7 +11,7 @@ import com.react.board.service.TestService;
 public class IndexController {
 	
 	@Autowired
-	TestService testService;
+	private TestService testService;
 	
 	@GetMapping("/hello")
 	public String hi() throws Exception {
