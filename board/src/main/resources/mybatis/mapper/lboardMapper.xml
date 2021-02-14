@@ -15,7 +15,7 @@
 				  , WRITER
 				  , TITLE
 				  , CONTENT
-				  , REG_DT
+				  , TO_CHAR(NVL(REG_DT, SYSDATE), 'YYYY-MM-DD HH24:MI:SS') AS REG_DT
 				  , PASSWD
 			 FROM L_BOARD LB
 			 ORDER BY REG_DT DESC
